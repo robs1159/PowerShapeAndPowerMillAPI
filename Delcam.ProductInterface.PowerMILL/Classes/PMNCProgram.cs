@@ -171,7 +171,7 @@ namespace Autodesk.ProductInterface.PowerMILL
                     {
                         foreach (PMToolpath toolpath in PowerMill.ActiveProject.Toolpaths)
                         {
-                            if (toolpath.Name == splitList[i].Trim())
+                            if (toolpath.Name.Trim() == splitList[i].Trim())
                             {
                                 returnToolpaths.Add(toolpath);
                                 break; // TODO: might not be correct. Was : Exit For
